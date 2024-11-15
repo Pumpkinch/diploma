@@ -1,0 +1,115 @@
+/* Контейнер для анимации звёзд */
+.starry-background {
+    position: fixed; /* Чтобы звёзды оставались на фоне */
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle,
+            #000000 0%,
+            #030b15 10%,
+            #06131B 20%,
+            #0a1a28 30%,
+            #0e2435 40%,
+            #112e42 55%,
+            #143a53 70%,
+            #1a4665 85%,
+            #1e5275 100%);
+    z-index: 0; /* На заднем плане */
+    top: 0;
+    left: 0;
+}
+
+/* Звёзды */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkling 5s infinite ease-in-out;
+}
+
+/* Анимация мерцания */
+@keyframes twinkling {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Главная страница */
+.login-page {
+    position: relative; /* Относительно звезд */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5vh;
+    z-index: 1; /* Поверх звезд */
+}
+
+/* Контейнер для формы */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Стили формы */
+.login-form {
+    background-color: #fff;
+    color: #2C3E50;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Тень для визуальной читаемости */
+}
+
+.login-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    width: 93%;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid #34495E;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #38495D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.signup-link {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.signup-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+
+header {
+    position: relative;
+    z-index: 2;
+}
