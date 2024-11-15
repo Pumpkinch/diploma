@@ -11,11 +11,11 @@ const StarryBackground = () => {
             star.classList.add('star');
             star.style.top = `${Math.random() * 100}%`;
             star.style.left = `${Math.random() * 100}%`;
-            star.style.animationDelay = `${Math.random() * 2}s`;  // задержка для каждой звезды
+            star.style.animationDelay = `${Math.random() * 4}s`;  // задержка для каждой звезды
             starContainerRef.current.appendChild(star);
 
             // Удаление звезды через 2 секунды для новой анимации
-            setTimeout(() => star.remove(), 2000);
+            setTimeout(() => star.remove(), 4500);
         };
 
         // Создание нескольких звезд каждые 500 мс
