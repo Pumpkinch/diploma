@@ -1,0 +1,65 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+    background: linear-gradient(135deg, #0c2d4a, #00357d);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Форма авторизации */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    flex-grow: 1;
+}
+
+.login-form {
+    background-color: #fff;
+    color: #333;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    width: 93%;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #38495D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.forgot-password,
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.signup-link a {
+    color: #3498db;
+    text-decoration: none;
+}

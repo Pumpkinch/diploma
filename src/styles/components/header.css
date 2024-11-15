@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px; /* Ограничиваем ширину */
+    margin: 20px auto;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    /* text-decoration: none;
+    color: white; */
+    font-weight: 600;
+}
+
+img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+strong {
+    padding-left: 3px;
+    color: #E67E22;
+}
+
+.nav-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+ul.nav {
+    display: flex;
+    list-style: none;
+    padding: 3px 0;
+    margin: 0;
+}
+
+ul.nav li {
+    margin: 0 30px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+ul.nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: inherit;
+    padding: 3px 0;
+}
+
+.sign {
+    background: transparent;
+    padding: 8px 15px;
+    border-style: solid;
+    border-color: #E67E22;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sign a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sign:hover {
+    opacity: 0.5;
+    transition: opacity 500ms ease;
+}
+
+.user-button {
+    cursor: pointer;
+    transition: color 500ms ease;
+}
+
+.user-button:hover {
+    color: #465AC1;
+}
+
+.user-button:active {
+    color: #1A0D33;
+}
+
+.user-account {
+    position: absolute;
+    border: 3px solid rgba(255, 255, 255, 0);
+}

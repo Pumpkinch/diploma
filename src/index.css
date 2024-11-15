@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Установка box-sizing для более предсказуемого расчета размеров
+*,
+*::before,
+*::after {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(8, 0, 43);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 20px;
+} */
+
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('./Images/Star.svg') repeat;
+  opacity: 0.6;
+  animation: starTwinkle 2s infinite ease-in-out;
+}
+
+@keyframes starTwinkle {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* конец */
+
+

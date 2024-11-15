@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(8, 0, 43);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 1300px; /* Ограничиваем ширину */
+    margin: 0 auto;
+}
+
+.layout {
+  height: 100vh;
+}
