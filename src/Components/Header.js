@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/components/header.css';
-import { Link } from "react-router-dom";
+import { useAuth } from '../Context/AuthContext';
+import { Link } from 'react-router-dom';
 import logo from '../images/rocket.svg';
 
 export default function Header() {
-    const [accountOpen, setAccountOpen] = useState(false);
+  const { user, logout } = useAuth();
 
-    return (
-        <header>
-            <div className='header'>
-                <div className='logo'>
-                    {/* <Link to="/"> */}
-                        <img src={logo} alt="FanBoost logo" />
-                        <span>Fan<strong>Boost</strong></span>
-                    {/* </Link> */}
-                </div>
-                <div className='nav-wrapper'>
-                    <ul className='nav'>
-                        <li><Link to="/">Главная</Link></li>
-                        <li><Link to="/authors">Авторы</Link></li>
-                        <li><Link to="/about">О нас</Link></li>
-                    </ul>
-                </div>
-                <button className='sign'><Link to="/sign">Зарегистрироваться</Link></button>
-                {accountOpen && (
-                    <div className='user-account'>
-                        {/* Сюда можно добавить детали аккаунта пользователя */}
-                    </div>
-                )}
-            </div>
-        </header>
-    );
+  return (
+    <header>
+      <div className='header-container'>
+        <div className='logo'>
+          <img src={logo} alt="FanBoost logo" />
+          <span>Fan<strong>Boost</strong></span>
+        </div>
+        <ul className='nav'>
+          <li><Link to="/">Главная</Link></li>
+          <li><Link to="/authors">Авторы</Link></li>
+          <li><Link to="/about">О нас</Link></li>
+        </ul>
+        {user ? (
+          <div>
+            <span>Привет, {user.name}!</span>
+            <button onClick={logout}>Выйти</button>
+            <Link to="/profile">Профиль</Link>
+          </div>
+        ) : (
+          <button className='sign'><Link to="/sign">Зарегистрироваться</Link></button>
+        )}
+      </div>
+    </header>
+  );
 }

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import '../styles/components/authorization.css'
+import React, { Component } from 'react';
+
 
 export default class Authorization extends Component {
     render() {
@@ -10,14 +10,15 @@ export default class Authorization extends Component {
                     <form>
                         <input type="email" placeholder="Эл. почта" />
                         <input type="password" placeholder="Пароль" />
-                        <div className="forgot-password">Забыли пароль?</div>
+                        {/* <div className="forgot-password">Забыли пароль?</div> */}
                         <button type="submit" className="login-button">Войти</button>
                         <div className="signup-link">
-                            Вы не зарегистрированы? <a href="/register">Зарегистрироваться</a>
+                            Вы не зарегистрированы? 
+                            <a href="#" onClick={this.props.toggleForm}>Зарегистрироваться</a>
                         </div>
                     </form>
                 </div>
             </main>
-        )
+        );
     }
 }
