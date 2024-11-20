@@ -2,9 +2,8 @@ import React from 'react';
 
 const PageLayout = ({ background, children }) => {
   const pageStyle = {
-    background: background || 'white', // Если фон не передан, будет белый
+    background: background || 'rgb(8, 0, 43)', // Если фон не передан, будет белый
     minHeight: '100vh',  // Для того, чтобы фон покрывал всю высоту страницы
-    padding: '20px', // Немного отступов
   };
 
   return (

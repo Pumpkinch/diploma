@@ -1,0 +1,106 @@
+.profile {
+    max-width: 1300px;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile h2 {
+    text-align: center;
+    color: #F1C40F;
+}
+
+/* Стили для фото профиля */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid #ffffff;
+}
+
+.profile-photo input {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Стили для информации о профиле */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-field p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Кнопки */
+.profile-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-buttons button:first-child {
+    background-color: #27AE60;
+    color: white;
+}
+
+.profile-buttons button:first-child:hover {
+    background-color: #219653;
+}
+
+.profile-buttons button:last-child {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.profile-buttons button:last-child:hover {
+    background-color: #C0392B;
+}
+
+/* Режимы */
+.profile.viewing .profile-info {
+    flex-direction: column; /* Горизонтальное расположение */
+
+}
+
+.profile.editing .profile-info {
+
+}
+
+.profile-info input,
+    .profile-info textarea {
+        font-size: 14px;
+    }
+
+    .profile-info button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }

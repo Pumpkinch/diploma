@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className='header'>
+      <div className='header-container'>
         <div className='logo'>
           <img src={logo} alt="FanBoost logo" />
           <span>Fan<strong>Boost</strong></span>

@@ -41,7 +41,7 @@ export default class Authors extends Component {
   render() {
     return (
       <div className='wrapper'>
-        <div className='Authors'>
+        <div className='authors'>
           <h1>Популярные авторы</h1>
           <AuthorsList items={this.state.items} />
         </div>

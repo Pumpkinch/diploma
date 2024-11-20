@@ -15,12 +15,11 @@ body {
 }
 
 .wrapper {
-
   width: 100%;
-  margin: 50px auto;
-  padding: 0 20px;
   max-width: 1300px; /* Ограничиваем ширину */
-    margin: 0 auto;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(#81536D 0%, #2D3962 17%, #001F3D 100%);
 }
 
 .layout {
